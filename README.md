@@ -26,6 +26,7 @@ https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control/blob/
 Please post bugs, comments, and concerns to https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control.
 
 If you use this software please place the following citation in your writings:
+
 Raeth, P.G. (2020) Embeddable Software for Irrigation Control, software and documentation, 
 https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control.
 
