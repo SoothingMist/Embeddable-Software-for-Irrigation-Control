@@ -14,7 +14,7 @@ The general vision combines soil, terrain, plant type, the plant’s moisture ne
 
 ![Image of Vision](https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control/blob/master/VisionPicture.jpg)
 
-We begin with a calculation of evapotranspiration for a reference crop, ETo. Software will be added as it is developed for modifying ETo to get ETc, evapotransperation for a specific crop, soil, and terrain. Future modules will employ the latest weather readings instead of historical data. A demonstration of embedded computer access will also be added. Scaling the system for large-scale distributed operations is another goal. It is this author's hope that collaborators will have additional ideas for modules and documentation.
+We begin with a calculation of evapotranspiration for a reference crop, ETo. ETc is also there for modifying ETo to get ETc, evapotransperation for a specific crop, soil, and terrain. Future modules will employ the latest weather readings instead of historical data. A demonstration of embedded computer access will also be added. Scaling the system for large-scale distributed operations is another goal. It is this author's hope that collaborators will have additional ideas for modules and documentation.
 
 # What is in this Version of the Software
 
@@ -24,7 +24,7 @@ There are a number of stand-alone zip files associated with this project:
 
 ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data.
 
-ETc-UsingEToPlustWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data.
+ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data.
 
 # License
 
