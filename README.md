@@ -26,6 +26,8 @@ ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference cr
 
 ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data.
 
+What is coming next: The present software for calculating ETc uses a Kc table that is specific to a given experiment. So it is good as-is under the experiment's conditions. However, FAO's Kc table is generic. Its Kc values have to be adjusted for specific circumstances. Software for that is currently in production for standard conditions.
+
 # License
 
 This project is licensed under an AGPL-3.0 License, 
