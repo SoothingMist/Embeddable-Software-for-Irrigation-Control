@@ -26,7 +26,9 @@ ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference cr
 
 ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If your Kc table is specific and not general, this is the program to use.
 
-What is coming next: The present software for calculating ETc uses a Kc table that is specific to a given situation. So it is good as-is under the experiment's conditions. However, FAO's Kc table is generic. Its Kc values have to be adjusted for specific circumstances. Software for that is currently in production for standard conditions.
+ETc-CalculatedFromGeneralTable - Calculates ETc using FAO's general Kc and crop-growth-phase tables and associated equations for single-parameter/normal-conditions. This is the program to use if you use the general Kc tables.
+
+What is coming next: Calculating ETc and the associated water-need based on rain is important. But, how would that be communicated to the irrigation system? A network connection is needed for that. There is also software to be installed within the irrigation system's ebedded computer. We assume a Linux-based embedded computer is used. In our case, we will use a BeagleBoneBlack. Each embedded computer or microcontroller will have its own way to access onboard control circuits. Software for the selected case is currently in production.
 
 # License
 
