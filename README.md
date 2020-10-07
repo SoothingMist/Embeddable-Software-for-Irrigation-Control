@@ -22,11 +22,11 @@ This project's software is written in standard-language C++. Microsoft's VisualS
 
 There are a number of stand-alone zip files associated with this project:
 
-ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data.
+ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data. If you only need ETo, this is the program to use.
 
-ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data.
+ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If your Kc table is specific and not general, this is the program to use.
 
-What is coming next: The present software for calculating ETc uses a Kc table that is specific to a given experiment. So it is good as-is under the experiment's conditions. However, FAO's Kc table is generic. Its Kc values have to be adjusted for specific circumstances. Software for that is currently in production for standard conditions.
+What is coming next: The present software for calculating ETc uses a Kc table that is specific to a given situation. So it is good as-is under the experiment's conditions. However, FAO's Kc table is generic. Its Kc values have to be adjusted for specific circumstances. Software for that is currently in production for standard conditions.
 
 # License
 
