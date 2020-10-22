@@ -14,7 +14,7 @@ The general vision combines soil, terrain, plant type, the plant’s moisture ne
 
 ![Image of Vision](https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control/blob/master/VisionPicture.jpg)
 
-We begin with a calculation of evapotranspiration for a reference crop, ETo. ETc is a modification of ETo for a specific crop, soil, and terrain. Weather data feeds the calculation of ETo and Kc, a parameter for modifying ETo (ETc = ETo * Kc). ETc tells us the amount of moisture lost. Subtracting that from moisture needs tells us how much water to add.
+We begin with a calculation of evapotranspiration for a reference crop, ETo. ETc is a modification of ETo for a specific crop, soil, and terrain. Weather data feeds the calculation of ETo and Kc, a parameter for modifying ETo (ETc = ETo * Kc). ETc estimates the amount of moisture lost. Subtracting that from moisture needs estimates the amount of water to add.
 
 # What is in this Version of the Software
 
