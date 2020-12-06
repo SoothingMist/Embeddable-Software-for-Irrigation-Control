@@ -34,7 +34,15 @@ ETc-GeneralTable-NetworkedIrrigator - The same calculation for ETc as in ETc-Cal
 
 ETc-GeneralTable-NetworkedIrrigator-WeatherFeed - Replaced the reading of historical weather data with a REST query to the US Weather Service for readings over the last 24 hours. The resulting JSON response is reformatted into a record compatible with all other software modules. No changes to the calculation of ETo and ETc were made. Sweet Corn is used as the crop of interest since that is grown in Dayton Ohio USA, where the weather station is located. A generic windows server is provided for those without a BeagleBoneBlack.
 
-What is coming next: It is possible that rain may occur during the next 24 hours after the crop falls below its threshold moisture level. Thus, a prediction of rain would be useful to the decision whether or not to start the irrigator. Preliminary work suggests that a statistical model that correlates weather data with next-day rain has a strong chance of succeeding where reliable rain predications from physics models and other sources are unreliable. This work will continue until it is integrated with the other software and ready for posting.
+
+The software above uses a data format for weather data that is different from what now is delivered by the US National Oceanic and Atmospheric Administration, National Centers for Environmental Information. Still, sample data is there for your use. (JSON deliveries remain the same.) New software uses the new format. Earlier software will eventually be evolved to the new format.
+
+
+RainPrediction - Conducts an experiment in statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory.
+
+
+What is coming next: Having an ability to forecast precipitation may lead to less water used for irrigation as moisture depletion is estimated. The next group of software will examine that possibility.
+
 
 # License
 
