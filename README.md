@@ -35,14 +35,19 @@ ETc-GeneralTable-NetworkedIrrigator - The same calculation for ETc as in ETc-Cal
 ETc-GeneralTable-NetworkedIrrigator-WeatherFeed - Replaced the reading of historical weather data with a REST query to the US Weather Service for readings over the last 24 hours. The resulting JSON response is reformatted into a record compatible with all other software modules. No changes to the calculation of ETo and ETc were made. Sweet Corn is used as the crop of interest since that is grown in Dayton Ohio USA, where the weather station is located. A generic windows server is provided for those without a BeagleBoneBlack.
 
 
-The software above uses a data format for weather data that is different from what now is delivered by the US National Oceanic and Atmospheric Administration, National Centers for Environmental Information. Still, sample data is there for your use. (JSON deliveries remain the same.) New software uses the new format. Earlier software will eventually be evolved to the new format.
+The software above uses a data format for weather data that is different from what now is delivered by the US National Oceanic and Atmospheric Administration, National Centers for Environmental Information. Still, sample data is there for your use. (JSON deliveries remain the same.)
 
 
 RainPrediction - Conducts an experiment in statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory.
 
 
-What is coming next: Having an ability to forecast precipitation may lead to less water used for irrigation as moisture depletion is estimated. The next group of software will examine that possibility.
+WaterUse - Evolves earlier software so that it uses the new US weather data format. That software is integrated with RainPrediciton to study the impact of rain prediction on water volume consumed by irrigation. There are three sub-directories:
 
+  1. WeatherData: Contains all weather data used to drive the software during testing.
+  2. WaterUseTesting-SansPrediction: ETo and ETc without rain prediction. This is a VisualStudio project.
+  3. WaterUseTesting-WithPrediction: ETo and ETc with rain prediction. See Notes.txt to build and run. Builds but will not run in VisualStudio.
+  
+There is also a pdf file in the root directory that gives background. It is a paper currently under review for publication. The paper's conclusion that the version of rain pediction used has no impact is incorrect. That conclusion was caused by an error in the math estimating required irrigation that has since been corrected. The correction will be incorporated in the paper during the review process.
 
 # License
 
