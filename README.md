@@ -8,6 +8,8 @@ Two papers have been published on this topic:
 
 2) https://academicjournals.org/journal/JECI/article-abstract/EED46CD66537
 
+The second stage of this effort is available: https://github.com/SoothingMist/Remote-Soil-Moisture-Sensing.
+
 # Background
 
 Precision irrigation is a component of precision agriculture (precision farming), a field of work that combines agricultural knowledge with other fields such as computer engineering, geographic information systems, remote sensing, and meteorology. The main point is to improve or, at least maintain, crop value while using fewer resources such as land, pesticides, water, and fertilizers. It does so while retaining nutrition and without resorting to the risks of genetic mutation.
