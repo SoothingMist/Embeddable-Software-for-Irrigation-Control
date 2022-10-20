@@ -52,8 +52,6 @@ WaterUse - Evolves earlier software so that it uses the new US weather data form
   1. WeatherData: Contains all weather data used to drive the software during testing.
   2. WaterUseTesting-SansPrediction: ETo and ETc without rain prediction. This is a VisualStudio project.
   3. WaterUseTesting-WithPrediction: ETo and ETc with rain prediction. See Notes.txt to build and run. Builds but will not run in VisualStudio.
-  
-There is also a pdf file in the root directory that gives background. It is a paper currently under review for publication. The paper's conclusion that the version of rain pediction used has no impact is incorrect. That conclusion was caused by an error in the math estimating required irrigation that has since been corrected. The correction will be incorporated in the paper during the review process.
 
 # License
 
