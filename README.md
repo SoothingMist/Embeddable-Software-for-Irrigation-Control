@@ -30,7 +30,13 @@ This project's software is written in standard-language C++. Microsoft's VisualS
 
 There are a number of stand-alone zip files associated with this project. Each comes with a file AboutThisSoftware that gives more details. Please post a message if you find some detail is missing.
 
+WeatherData - Contains sample weather data downloaded from the US National Centers for Environmental Information, Global Summary of the Day (GSOD), repository. This directory goes in the same directory as each of the code directories.
+
 ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data. If you only need ETo, this is the program to use.
+
+========================
+
+These are old codes that are being improved. They read a different version of the weather data.
 
 ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If your Kc table is specific and not general, this is the program to use.
 
