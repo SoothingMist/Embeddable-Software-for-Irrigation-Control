@@ -34,11 +34,13 @@ WeatherData - Contains sample weather data downloaded from the US National Cente
 
 ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data. If you only need ETo, this is the program to use.
 
+ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a single crop under normal conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If you have a specific Kc table, this is the program to use.
+
+
 ========================
 
 These are old codes that are being improved. They read a different version of the weather data.
 
-ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a specific crop under specific conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If your Kc table is specific and not general, this is the program to use.
 
 ETc-CalculatedFromGeneralTable - Calculates ETc using FAO's general Kc and crop-growth-phase tables and associated equations for single-parameter/normal-conditions. This is the program to use if you use the general Kc tables.
 
