@@ -38,6 +38,8 @@ ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table
 
 ETo-ETc-WeatherQuery-Microcontroller - Queries the US Weather Service for real-time weather data. That data is parsed and used to calculate ETo. As before, Kc is iterpolated from a table drawn from empirical experiments. There are no weather-data files associated with this software. Input is received from the internet. Communication with an Arduino Uno simulates interaction with an irrigation system.
 
+RainPrediction - Experimental. Performs a statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory. If one thinks it is about to rain, one may wish to delay irrigation.
+
 # License
 
 This project is licensed under an AGPL-3.0 License, 
