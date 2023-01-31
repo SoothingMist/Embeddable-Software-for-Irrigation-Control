@@ -36,31 +36,6 @@ ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference cr
 
 ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a single crop under normal conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If you have a specific Kc table, this is the program to use.
 
-
-========================
-
-These are old codes that are being improved. They read a different version of the weather data.
-
-
-ETc-CalculatedFromGeneralTable - Calculates ETc using FAO's general Kc and crop-growth-phase tables and associated equations for single-parameter/normal-conditions. This is the program to use if you use the general Kc tables.
-
-ETc-GeneralTable-NetworkedIrrigator - The same calculation for ETc as in ETc-CalculatedFromGeneralTable is applied, combined with software moldules to create a rudimentary client/server system. The server, software written for the BeagleBoneBlack (https://beagleboard.org/black), an embeddable computer, receives messages from the client indicating how much water is needed. The server turns an LED on and off during the period of "irrigator" operation. The client uses VisualStudio-specific networking modules. However, those are in their own class and could be replaced by Linux-oriented modules. The server is written specifically for the BeagleBone but here too the modular nature makes that easy to modify. It is a matter of which irrigator controller one is using.
-
-ETc-GeneralTable-NetworkedIrrigator-WeatherFeed - Replaced the reading of historical weather data with a REST query to the US Weather Service for readings over the last 24 hours. The resulting JSON response is reformatted into a record compatible with all other software modules. No changes to the calculation of ETo and ETc were made. Sweet Corn is used as the crop of interest since that is grown in Dayton Ohio USA, where the weather station is located. A generic windows server is provided for those without a BeagleBoneBlack.
-
-
-The software above uses a data format for weather data that is different from what now is delivered by the US National Oceanic and Atmospheric Administration, National Centers for Environmental Information. Still, sample data is there for your use. (JSON deliveries remain the same.)
-
-
-RainPrediction - Conducts an experiment in statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory.
-
-
-WaterUse - Evolves earlier software so that it uses the new US weather data format. That software is integrated with RainPrediciton to study the impact of rain prediction on water volume consumed by irrigation. There are three sub-directories:
-
-  1. WeatherData: Contains all weather data used to drive the software during testing.
-  2. WaterUseTesting-SansPrediction: ETo and ETc without rain prediction. This is a VisualStudio project.
-  3. WaterUseTesting-WithPrediction: ETo and ETc with rain prediction. See Notes.txt to build and run. Builds but will not run in VisualStudio.
-
 # License
 
 This project is licensed under an AGPL-3.0 License, 
