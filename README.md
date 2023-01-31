@@ -26,15 +26,17 @@ We begin with a calculation of evapotranspiration for a reference crop, ETo. ETc
 
 # What is in this Version of the Software
 
-This project's software is written in standard-language C++. Microsoft's VisualStudioCommunity, a free integrated development environment (IDE), was used to write and test the code. This IDE can be downloaded from https://visualstudio.microsoft.com/downloads. If you use an IDE besides VisualStudioCommunity, you may have to respecify the location of sample data files. VisualStudio itself may want to reconfigure the project for the version you happen to be running. Since C++ is used in its standard form (no Microsoft extensions or other dependencies are employed) it should be possible to build the source with any system that supports C++ v11. The uploaded software was built on a 64-bit computer running the Windows-10 operating system. However, it should work just as well with a 32-bit or even 16-bit computer running Windows or Linux. After you build the software, you only need to run it with the sample data.
+This project's software is written in standard-language C++. Microsoft's VisualStudioCommunity, a free integrated development environment (IDE), was used to write and test the code. This IDE can be downloaded from https://visualstudio.microsoft.com/downloads. If you use an IDE besides VisualStudioCommunity, you may have to respecify the location of sample data files. VisualStudio itself may want to reconfigure the project for the version you happen to be running. Since C++ is used in its standard form (Microsoft libraries and language extensions are avoided) it should be possible to build the source with any system that supports C++ v11. The uploaded software was built on a 64-bit computer running the Windows-10 operating system. However, it should work just as well with a 32-bit or even 16-bit computer running Windows or Linux.
 
-There are a number of stand-alone zip files associated with this project. Each comes with a file AboutThisSoftware that gives more details. Please post a message if you find some detail is missing.
+There are a number of stand-alone zip files associated with this project. Each comes with a file AboutThisSoftware that gives more details. Please post a message if you find some detail is missing. Your comments are welcomed.
 
-WeatherData - Contains sample weather data downloaded from the US National Centers for Environmental Information, Global Summary of the Day (GSOD), repository. This directory goes in the same directory as each of the code directories.
+WeatherData - Contains sample weather data downloaded from the US National Center for Environmental Information, Global Summary of the Day (GSOD), repository. This directory goes in the same directory as each of the code directories.
 
-ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data. If you only need ETo, this is the program to use.
+ETo-UsingWeatherDataFile - Calculates ETo, evapatranspiration for a reference crop. Data input is from a file of historical weather data. If you only need ETo, this is the program to use. After you build the software, you only need to run it with the sample data. The code and comments make it clear how to query for and employ different data.
 
-ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a single crop under normal conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If you have a specific Kc table, this is the program to use.
+ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table for a single crop under normal conditions. The result is ETc for that crop under those conditions during the specified growing season. Data input is from a file of historical weather data. If you have a specific Kc table, this is the program to use. After you build the software, you only need to run it with the sample data. The code and comments make it clear how to query for and employ different data.
+
+ETo-ETc-WeatherQuery-Microcontroller - Queries the US Weather Service for real-time weather data. That data is parsed and used to calculate ETo. As before, Kc is iterpolated from a table drawn from empirical experiments. There are no weather-data files associated with this software. Input is received from the internet. Communication with an Arduino Uno simulates interaction with an irrigation system.
 
 # License
 
