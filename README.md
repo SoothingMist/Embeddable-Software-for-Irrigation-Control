@@ -38,7 +38,11 @@ ETc-UsingEToPlusWeatherDataFile - Integrates the ETo calculation with a Kc table
 
 ETo-ETc-WeatherQuery-Microcontroller - Queries the US Weather Service for real-time weather data. That data is parsed and used to calculate ETo. As before, Kc is iterpolated from a table drawn from empirical experiments. There are no weather-data files associated with this software. Input is received from the internet. Communication with an Arduino Uno simulates interaction with an irrigation system.
 
-RainPrediction - Experimental. Performs a statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory. If one thinks it is about to rain, one may wish to delay irrigation.
+===== Experimental Code - Still Being Developed
+
+RainPrediction - Performs a statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory. If one thinks it is about to rain, one may wish to delay irrigation.
+
+AquaCrop-OS-Python-Embedded - A modification of https://github.com/aquacropos/aquacrop so that it accepts external weather data input. Tested for a single planting season. Agrees with original. Ultimately, its daily irrigation events will be used to drive a microcontroller. This seems to be a more reasonable approach, rather than building up someting new from scratch.
 
 # License
 
