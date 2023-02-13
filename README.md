@@ -42,7 +42,7 @@ ETo-ETc-WeatherQuery-Microcontroller - Queries the US Weather Service for real-t
 
 RainPrediction - Performs a statistical classification of weather conditions under which next-day precipitation may occur. See the document ApplyingC5.pdf in the root directory. If one thinks it is about to rain, one may wish to delay irrigation.
 
-AquaCrop-OS-Python-Embedded - A modification of https://github.com/aquacropos/aquacrop so that it accepts external weather data input and accesses daily irrigation requirements. Tested for a single planting season. Agrees with original. Ultimately, its daily irrigation events will be used to make real-time weather queries and drive a microcontroller, as in ETo-ETc-WeatherQuery-Microcontroller. See Notes.txt for more.
+AquaCrop-OS-Python-Embedded - A modification of https://github.com/aquacropos/aquacrop so that it accepts external weather data input and accesses daily irrigation requirements. Tested for a single planting season. Agrees with original. Ultimately, this code will make real-time weather queries, produce its daily irrigation events, and drive a microcontroller to simulate integration with an irrigation system, as in ETo-ETc-WeatherQuery-Microcontroller. See Notes.txt for more.
 
 # License
 
