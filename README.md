@@ -53,7 +53,7 @@ Please post bugs, comments, and concerns to https://github.com/SoothingMist/Embe
 
 If you use this software please place the following citation in your writings:
 
-Raeth, P.G. (2020, September) Embeddable Software for Irrigation Control, software and documentation, 
+Raeth, P.G. (2023, February) Embeddable Software for Irrigation Control, software and documentation, 
 https://github.com/SoothingMist/Embeddable-Software-for-Irrigation-Control.
 
 I am looking forward to your input and participation.
