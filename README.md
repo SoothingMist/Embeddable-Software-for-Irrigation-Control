@@ -10,7 +10,7 @@ Three papers have been published on this topic:
 
 3) https://academicjournals.org/journal/JECI/article-abstract/160372170979
 
-The second stage of this effort is available: https://github.com/SoothingMist/Remote-Soil-Moisture-Sensing.
+The second stage of this effort is available: [https://github.com/SoothingMist/Remote-Soil-Moisture-Sensing](https://github.com/SoothingMist/Scalable-Point-to-Point-LoRa-Sensor-Network). This project speaks to the need for remote sensing in precision agriculture.
 
 # Background
 
