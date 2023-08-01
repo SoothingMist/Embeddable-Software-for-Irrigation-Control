@@ -2,11 +2,13 @@
 
 This proof-of-concept “looks across the river” to explore computer engineering applied within agriculture, particularly precision irrigation. It begins with work by the United Nations Food and Agriculture Organization (FAO). They developed guidelines for estimating a crop’s water requirements. These guidelines describe a set of equations (Penman-Monteith form) drawn from the physics of evapotranspiration. The equations estimate moisture loss based on information specific to the crop, soil type, terrain, and ambient weather conditions. This present work provides a proof-of-concept for an adaptive process that combines an embedded version of FAO’s equations with weather data feeds. The aim is to create a human-supervised fully-automatic approach to irrigation based on estimated crop moisture needs. The author looks forward to collaboration with interested parties in this effort to apply computer engineering to problems in agriculture. With precision irrigation, farmers seek to cope with drought and limited rainy seasons by minimizing water use without devaluing the crop and without resorting to genetic mutation. This present work is another effort in that vein.
 
-Two papers have been published on this topic:
+Three papers have been published on this topic:
 
 1) https://academicjournals.org/journal/AJAR/article-abstract/74E637865285
 
 2) https://academicjournals.org/journal/JECI/article-abstract/EED46CD66537
+
+3) https://academicjournals.org/journal/JECI/article-abstract/160372170979
 
 The second stage of this effort is available: https://github.com/SoothingMist/Remote-Soil-Moisture-Sensing.
 
